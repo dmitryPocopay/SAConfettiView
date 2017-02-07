@@ -16,6 +16,7 @@ open class SAConfettiView: UIView {
         case triangle
         case star
         case diamond
+        case diamondSmall
         case image(UIImage)
     }
 
@@ -81,6 +82,8 @@ open class SAConfettiView: UIView {
             fileName = "star"
         case .diamond:
             fileName = "diamond"
+        case .diamondSmall:
+            fileName = "diamond_small"
         case let .image(customImage):
             return customImage
         }
